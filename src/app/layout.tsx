@@ -8,7 +8,7 @@ const RootLayout = ({
   children: React.ReactNode
 }) => (
   <html lang="en">
-    <body>{children}</body>
+    <body style={{ padding: 32 }}>{children}</body>
   </html>
 )
 
