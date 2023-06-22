@@ -8,6 +8,7 @@ describe('Crypto listing', () => {
       { fixture: 'cryptocurrencies.json' }
     ).as('getCryptocurrencies')
   })
+
   it('shows the first cryptocurrency', () => {
     cy.visit('localhost:3000')
 
