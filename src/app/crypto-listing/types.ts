@@ -1,4 +1,5 @@
 export type CryptocurrencyType = {
+  cmc_rank: number
   name: string
   quote: {
     USD: {

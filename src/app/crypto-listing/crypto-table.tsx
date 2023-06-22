@@ -16,11 +16,12 @@ const CryptoTable = () => {
   return (
     <TableContainer
       component={Paper}
-      style={{ border: `1px solid ${colors.tableBorder}`, borderRadius: 3 }}
+      style={{ border: `0.5px solid ${colors.tableBorder}`, borderRadius: 6 }}
     >
       <Table aria-label="simple table" >
         <TableHead>
           <TableRow>
+            <TableCell><strong>Rank</strong></TableCell>
             <TableCell><strong>Name</strong></TableCell>
             <TableCell align="right"><strong>Price</strong></TableCell>
             <TableCell align="right"><strong>Marketcap</strong></TableCell>
