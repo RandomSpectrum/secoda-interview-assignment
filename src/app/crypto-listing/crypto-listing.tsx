@@ -13,5 +13,4 @@ const CryptoListing = () => {
   return (<CryptoTable />)
 }
 
-
 export default CryptoListing
