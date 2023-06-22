@@ -1,13 +1,17 @@
 'use client';
+import { Provider } from 'react-redux';
+import store from './store';
 import { Box } from '@mui/material';
-import CryptoCurrencies from "./crypto-currencies/crypto-currencies"
+import CryptoListing from "./crypto-listing/crypto-listing"
 
 const Home = () => (
-  <main >
-    <Box mt={6}>
-      <CryptoCurrencies />
-    </Box>
-  </main >
+  <Provider store={store}>
+    <main >
+      <Box mt={6}>
+        <CryptoListing />
+      </Box>
+    </main>
+  </Provider>
 )
 
 export default Home
