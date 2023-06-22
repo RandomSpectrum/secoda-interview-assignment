@@ -9,10 +9,11 @@ const CryptoListing = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    dispatch(fetchCryptocurrencies())
+
+    setInterval(() => {
       dispatch(fetchCryptocurrencies())
     }, FETCH_CRYPTOCURRENCIES_INTERVAL);
-    return () => clearInterval(interval);
   }, []);
 
   return (<CryptoTable />)
